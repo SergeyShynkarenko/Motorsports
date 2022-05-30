@@ -1,0 +1,71 @@
+.subscribe {
+  background-color: $black;
+  padding: 40px 0 46px;
+  margin-bottom: 120px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 100px;
+  }
+
+  @media (max-width: 576px) {
+    margin-bottom: 50px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    @media (max-width: 992px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .content {
+      &__title {
+        font: 600 25px/1.36 $userfont;
+        margin-bottom: 20px;
+      }
+
+      &__text {
+        max-width: 430px;
+        @media (max-width: 1200px) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    .input-group {
+      width: 505px;
+      @media (max-width: 1200px) {
+        width: 100%;
+      }
+      @media (max-width: 576px) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: flex-end;
+    @media (max-width: 1200px) {
+      justify-content: flex-start;
+    }
+    .btn-info {
+      width: 190px;
+      font: 400 15px/1.36 $userfont;
+      padding: 16px;
+      background-color: $textcolor;
+      color: $black;
+      border: 1px solid $textcolor;
+      &:hover {
+        background-color: transparent;
+        color: $textcolor;
+      }
+      @media (max-width: 768px) {
+        width: auto;
+      }
+    }
+  }
+}

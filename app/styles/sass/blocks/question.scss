@@ -1,0 +1,78 @@
+.questions {
+  margin-bottom: 200px;
+  @media (max-width: 768px) {
+    margin-bottom: 100px;
+  }
+
+  @media (max-width: 576px) {
+    margin-bottom: 50px;
+  }
+
+  .accordion {
+    max-width: 820px;
+    margin: 0 auto;
+
+    &-button {
+      border-bottom: 1px solid transparent;
+      font: 700 15px/1.36 $userfont;
+      padding: 24px 47px 24px 39px;
+      // box-shadow: -3px 9px -3px 0px rgba(68, 68, 68, 0.09);
+      &.accordion-item {
+        box-shadow: 0px 0px 18px 0px rgba(68, 68, 68, 0.09);
+      }
+
+      &::after,
+      &::before {
+        position: absolute;
+        width: 11px;
+        background-size: cover;
+      }
+
+      &::after {
+        right: 47px;
+        top: 39px;
+        height: 2px;
+
+        @media (max-width: 576px) {
+          right: 17px;
+        }
+      }
+
+      &.collapsed {
+        box-shadow: none;
+        padding: 24px 35px 24px 24px;
+        border-bottom: 1px solid $borderaccordion;
+        font: 500 15px/1.36 $userfont;
+
+        @media (max-width: 576px) {
+          padding: 24px 45px 24px 17px;
+        }
+
+        @media (max-width: 425px) {
+          font: 500 14px/1.36 $userfont;
+        }
+
+        &::after {
+          right: 35px;
+          bottom: 23px;
+          height: 11px;
+          @media (max-width: 576px) {
+            right: 15px;
+          }
+        }
+      }
+    }
+
+    &-body {
+      li:not(:last-child) {
+        margin-bottom: 8px;
+      }
+    }
+
+    &-collapse {
+      position: relative;
+      font: 400 13px/1.5 $userfont;
+      color: $black;
+    }
+  }
+}

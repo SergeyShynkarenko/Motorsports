@@ -1,0 +1,36 @@
+.footer {
+  background-color: $black;
+  padding: 36px 0;
+  &__inner {
+    align-items: center;
+    font-weight: 600;
+  }
+  &__logo {
+    img {
+      max-width: 191px;
+    }
+  }
+  &__list {
+    display: flex;
+    justify-content: center;
+    @media (max-width: 575px) {
+      justify-content: flex-start;
+      margin-top: 20px;
+    }
+  }
+
+  &__item:not(:first-child) {
+    margin-left: 40px;
+  }
+
+  .social__list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 0;
+    @media (max-width: 575px) {
+      justify-content: flex-start;
+      margin-top: 20px;
+    }
+  }
+}

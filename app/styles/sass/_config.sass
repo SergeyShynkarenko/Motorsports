@@ -1,0 +1,201 @@
+// USER VARIABLES SECTION
+
+$accent: #DF4E3C // Accent Color
+$fontsize: 15px // Body Font Size
+$textcolor: #F8F8F8 // Text Color
+$grey: #8D8D8D // Grey Color
+$bordercolor: #BDBDBD // Border Color
+$titlecolor: #AEAEAE // Title Color
+$greybg: #E5E5E5 // Grey Background
+$black: #000 // Black Color
+$white: #fff // White Color
+$borderaccordion: #c4c4c4 //	Border Accordion
+$lineheight: 1.36 // Document Line Height
+$weight: 400 // Document Font Weight
+$userfont: Noto Sans, sans-serif // User Font Family
+$userfont2: Poppins, sans-serif // User Font Family
+$systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
+
+// gutter
+$grid-gutter-width: 20px
+
+// menu
+$navbar-padding-y: 0
+$navbar-padding-x: 0
+$navbar-light-color: $textcolor
+$navbar-light-hover-color: $accent
+$navbar-toggler-focus-width: none
+$navbar-nav-link-padding-x: 20px
+$navbar-light-toggler-border-color: none
+
+// btn
+$btn-border-width: 2px
+$btn-border-radius: 15px
+$btn-transition: all 0.3s ease
+// $btn-padding-y: 14px
+// $btn-padding-x: 90px
+// $btn-font-size: 20px
+// $btn-line-height: 1.36
+// $btn-font-weight: 500
+// $btn-link-color: $textcolor
+// $btn-link-hover-color: $black
+// $btn-link-hover-color: $black
+// $btn-border-radius: 15px
+// $btn-border-width: 2px
+// $color: $textcolor
+// $background: transparent
+// $hover-background: $textcolor
+
+// $btn-padding-y-sm: 14px
+// $btn-padding-x-sm: 90px
+
+// checkbox
+$form-check-input-width: 1.345em
+$form-check-min-height: 1.345em
+$form-check-label-color: $grey
+$form-check-input-border: 1px solid $grey
+$form-check-input-bg: $white
+$form-check-input-checked-bg-color: $accent
+$form-check-input-focus-border: none
+$form-check-input-focus-box-shadow: none
+
+// input
+$input-bg: transparent
+$input-border-radius: 15px
+$input-border-color: $bordercolor
+$input-border-width: 1px
+$input-font-size: 15px
+$input-font-weight: 400
+$input-line-height: 1.36
+$input-padding-y: 16px
+$input-padding-x: 16px
+$input-color: $textcolor
+$input-placeholder-color: $textcolor
+$input-focus-box-shadow: none
+$input-focus-border-color: $textcolor
+$input-focus-color: $textcolor
+
+// accordion
+$accordion-button-icon: url("../images/dist/plus.svg")
+$accordion-button-active-icon: url("../images/dist/minus.svg")
+$accordion-button-bg: $greybg
+$accordion-button-focus-border-color: none
+$accordion-button-focus-box-shadow: none
+$accordion-button-active-bg: $white
+$accordion-button-active-color: $accent
+$accordion-border-radius: 0
+$accordion-button-padding-y: 24px 35px
+$accordion-button-padding-x: 24px 24px
+$accordion-icon-transform: rotate(0deg)
+$accordion-border-width: 0
+$accordion-border-color: transparent
+$accordion-color: $black
+$accordion-body-padding-y: 0 47px
+$accordion-body-padding-x: 24px 39px
+
+// IMPORT SECTION
+
+// @import 'node_modules/bootstrap/scss/bootstrap-reboot.scss' // Bootstrap Reboot collection
+// @import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss' // Bootstrap Breakpoints mixin
+// @import 'node_modules/bootstrap/scss/bootstrap-grid.scss' // Optional Bootstrap Grid
+// @import 'node_modules/bootstrap/scss/utilities/_sizing.scss' // Optional Bootstrap Utilites
+@import 'node_modules/bootstrap/scss/bootstrap'
+// @import 'node_modules/select2-bootstrap-5-theme/dist/select2-bootstrap-5-theme.min'
+@import 'node_modules/select2-bootstrap-5-theme/src/_include-all.scss'
+
+// FONTS LOAD SECTION
+
+@mixin font($fname, $fstyle, $fweight, $furl)
+	@font-face
+		font-family: $fname
+		font-style: $fstyle
+		font-weight: $fweight
+		src: url($furl) format('woff2')
+
+@include font('Noto Sans', normal, 300, '../fonts/NotoSans/NotoSans-Light.woff2')
+@include font('Noto Sans', normal, 400, '../fonts/NotoSans/NotoSans.woff2')
+@include font('Noto Sans', normal, 500, '../fonts/NotoSans/NotoSans-Medium.woff2')
+@include font('Noto Sans', normal, 600, '../fonts/NotoSans/NotoSans-Semibold.woff2')
+@include font('Noto Sans', normal, 700, '../fonts/NotoSans/NotoSans-Bold.woff2')
+@include font('Poppins', normal, 400, '../fonts/Poppins/Poppins-Regular.woff2')
+@include font('Poppins', normal, 700, '../fonts/Poppins/Poppins-Bold.woff2')
+
+// GENERAL DOCUMENT STYLES
+
+::placeholder
+	color: $textcolor
+
+::selection
+	background-color: $accent
+	color: $white
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+
+body
+	font-family: $userfont
+	font-size: $fontsize
+	line-height: $lineheight
+	color: $textcolor
+	font-weight: $weight
+	min-width: 320px
+	position: relative
+	overflow-x: hidden
+	background-color: $greybg
+	&.hidden__body
+		overflow-y: hidden
+
+.container
+	max-width: 1270px
+	margin: 0 auto
+	padding: 0 15px
+	height: 100%
+	&-fluid
+		padding: 0 15px
+
+img
+	width: 100%
+
+ul
+	list-style: none
+	margin: 0
+	padding: 0
+
+a
+	color: $textcolor
+	text-decoration: none
+	transition: all .3s ease-in
+	&:hover
+		color: $accent
+		text-decoration: none
+
+.title
+	font: 700 50px/1.5 $userfont2
+	color: $titlecolor
+	text-align: center
+	text-transform: uppercase
+	margin-bottom: 80px
+	@media (max-width: 768px)
+		font-size: 45px
+		margin-bottom: 50px
+
+	@media (max-width: 576px)
+		font-size: 40px
+
+svg
+	fill: $textcolor
+	transition: all 0.3s ease
+	&:hover
+		fill: $accent
+
+.btn
+	transition: all 0.3s ease
+
+.social__list
+	margin-left: 45px
+	&-item:last-child
+		margin-left: 31px
