@@ -16,40 +16,15 @@ $userfont: Noto Sans, sans-serif // User Font Family
 $userfont2: Poppins, sans-serif // User Font Family
 $systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
 
-// gutter
+// Gutter
 $grid-gutter-width: 20px
 
-// menu
-$navbar-padding-y: 0
-$navbar-padding-x: 0
-$navbar-light-color: $textcolor
-$navbar-light-hover-color: $accent
-$navbar-toggler-focus-width: none
-$navbar-nav-link-padding-x: 20px
-$navbar-light-toggler-border-color: none
-
-// btn
+// Button
 $btn-border-width: 2px
 $btn-border-radius: 15px
 $btn-transition: all 0.3s ease
-// $btn-padding-y: 14px
-// $btn-padding-x: 90px
-// $btn-font-size: 20px
-// $btn-line-height: 1.36
-// $btn-font-weight: 500
-// $btn-link-color: $textcolor
-// $btn-link-hover-color: $black
-// $btn-link-hover-color: $black
-// $btn-border-radius: 15px
-// $btn-border-width: 2px
-// $color: $textcolor
-// $background: transparent
-// $hover-background: $textcolor
 
-// $btn-padding-y-sm: 14px
-// $btn-padding-x-sm: 90px
-
-// checkbox
+// Checkbox
 $form-check-input-width: 1.345em
 $form-check-min-height: 1.345em
 $form-check-label-color: $grey
@@ -59,7 +34,7 @@ $form-check-input-checked-bg-color: $accent
 $form-check-input-focus-border: none
 $form-check-input-focus-box-shadow: none
 
-// input
+// Input
 $input-bg: transparent
 $input-border-radius: 15px
 $input-border-color: $bordercolor
@@ -75,7 +50,7 @@ $input-focus-box-shadow: none
 $input-focus-border-color: $textcolor
 $input-focus-color: $textcolor
 
-// accordion
+// Accordion
 $accordion-button-icon: url("../images/dist/plus.svg")
 $accordion-button-active-icon: url("../images/dist/minus.svg")
 $accordion-button-bg: $greybg
@@ -95,12 +70,7 @@ $accordion-body-padding-x: 24px 39px
 
 // IMPORT SECTION
 
-// @import 'node_modules/bootstrap/scss/bootstrap-reboot.scss' // Bootstrap Reboot collection
-// @import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss' // Bootstrap Breakpoints mixin
-// @import 'node_modules/bootstrap/scss/bootstrap-grid.scss' // Optional Bootstrap Grid
-// @import 'node_modules/bootstrap/scss/utilities/_sizing.scss' // Optional Bootstrap Utilites
 @import 'node_modules/bootstrap/scss/bootstrap'
-// @import 'node_modules/select2-bootstrap-5-theme/dist/select2-bootstrap-5-theme.min'
 @import 'node_modules/select2-bootstrap-5-theme/src/_include-all.scss'
 
 // FONTS LOAD SECTION
@@ -185,6 +155,9 @@ a
 
 	@media (max-width: 576px)
 		font-size: 40px
+
+	@media (max-width: 425px)
+		font-size: 35px
 
 svg
 	fill: $textcolor

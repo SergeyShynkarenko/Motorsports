@@ -66,6 +66,11 @@
       @media (max-width: 768px) {
         width: auto;
       }
+
+      @media (max-width: 576px) {
+        width: 190px;
+        padding: 12px;
+      }
     }
   }
 }

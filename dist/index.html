@@ -5,31 +5,523 @@
 <head>
 
 	<meta charset="utf-8">
-	<!-- <base href="/"> -->
-
-	<title>OptimizedHTML 5</title>
-	<meta name="description" content="Startup HTML template OptimizedHTML 5">
-
+	<title>MonzaMotorsports</title>
+	<meta name="MonzaMotorsports" content="MonzaMotorsports">
 	<meta name="viewport" content="width=device-width">
-
 	<link rel="icon" href="images/favicon.png">
-	<meta property="og:image" content="images/dist/preview.jpg">
-	
 	<link rel="stylesheet" href="css/main.min.css">
 
 </head>
 
 <body>
 
-	<div style="max-width: 700px; margin: auto">
+	<header class="header">
+		<div class="container">
 
-		<img src="images/dist/preview.jpg" alt="Start HTML5 Template" style="width: 100%"><br><br>
-		<h2>Welcome to startup HTML template OptimizedHTML 5!</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam reprehenderit nulla alias expedita a qui, pariatur doloremque ipsa fugit laboriosam odio iure recusandae laborum delectus praesentium magni reiciendis voluptatem. Sed.</p>
-	
+			<div class="header__top row">
+
+				<button class="hamburger hamburger--slider" arial-label="Btn menu" type="button">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+
+				<div class="col-3">
+					<a class="top__logo" href="#">
+						<img src="images/dist/logo.svg" alt="Logo">
+					</a>
+				</div>
+
+				<div class="col-9">
+					<div class="top__inner">
+						<nav class="top__nav">
+							<ul class="nav__list d-flex">
+								<li class="nav__list-item">
+									<a class="nav__list-link" href="#">Inventory</a>
+								</li>
+								<li class="nav__list-item">
+									<a class="nav__list-link" href="#">Financing</a>
+								</li>
+								<li class="nav__list-item">
+									<a class="nav__list-link" href="#">Contacts</a>
+								</li>
+							</ul>
+						</nav>
+						<ul class="social__list d-flex">
+							<li class="social__list-item">
+								<a class="social__list-link" href="#">
+									<svg width="9" height="18" viewBox="0 0 9 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M7.3575 2.98875H9.00075V0.12675C8.71725 0.08775 7.74225 0 6.60675 0C4.2375 0 2.6145 1.49025 2.6145 4.22925V6.75H0V9.9495H2.6145V18H5.82V9.95025H8.32875L8.727 6.75075H5.81925V4.5465C5.82 3.62175 6.069 2.98875 7.3575 2.98875Z" />
+									</svg>
+								</a>
+							</li>
+							<li class="social__list-item">
+								<a class="social__list-link" href="#">
+									<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M9.1775 18C9.1179 18 9.0583 18 8.99828 17.9997C7.58731 18.0032 6.2836 17.9673 5.01572 17.8901C3.85333 17.8194 2.79228 17.4177 1.94713 16.7286C1.13163 16.0637 0.574744 15.1646 0.291973 14.0566C0.0458697 13.092 0.0328229 12.1451 0.0203255 11.2292C0.0112614 10.5721 0.00192268 9.79346 0 9.00162C0.00192268 8.20648 0.0112614 7.42783 0.0203255 6.77071C0.0328229 5.85499 0.0458697 4.90811 0.291973 3.94337C0.574744 2.83539 1.13163 1.9363 1.94713 1.27135C2.79228 0.582226 3.85333 0.180538 5.01586 0.109813C6.28373 0.0327713 7.58772 -0.00320908 9.00172 0.000224161C10.4131 -0.00279709 11.7164 0.0327713 12.9843 0.109813C14.1467 0.180538 15.2077 0.582226 16.0529 1.27135C16.8685 1.9363 17.4253 2.83539 17.708 3.94337C17.9541 4.90797 17.9672 5.85499 17.9797 6.77071C17.9887 7.42783 17.9982 8.20648 18 8.99833V9.00162C17.9982 9.79346 17.9887 10.5721 17.9797 11.2292C17.9672 12.145 17.9543 13.0918 17.708 14.0566C17.4253 15.1646 16.8685 16.0637 16.0529 16.7286C15.2077 17.4177 14.1467 17.8194 12.9843 17.8901C11.7701 17.964 10.5228 18 9.1775 18ZM8.99828 16.5935C10.3863 16.5968 11.6608 16.5617 12.8989 16.4865C13.7778 16.4331 14.5399 16.1478 15.1642 15.6388C15.7413 15.1681 16.1387 14.5188 16.3454 13.7089C16.5503 12.9059 16.5621 12.0437 16.5735 11.21C16.5824 10.5573 16.5918 9.78413 16.5937 8.99998C16.5918 8.21569 16.5824 7.44266 16.5735 6.78993C16.5621 5.9562 16.5503 5.09405 16.3454 4.29095C16.1387 3.48098 15.7413 2.83168 15.1642 2.36106C14.5399 1.85211 13.7778 1.56688 12.8989 1.51346C11.6608 1.43806 10.3863 1.40332 9.00158 1.40634C7.61382 1.40304 6.33922 1.43806 5.10115 1.51346C4.22221 1.56688 3.46014 1.85211 2.83582 2.36106C2.25874 2.83168 1.86129 3.48098 1.6546 4.29095C1.4497 5.09405 1.43789 5.95607 1.42649 6.78993C1.41756 7.44321 1.40823 8.21678 1.4063 9.00162C1.40823 9.78303 1.41756 10.5567 1.42649 11.21C1.43789 12.0437 1.4497 12.9059 1.6546 13.7089C1.86129 14.5188 2.25874 15.1681 2.83582 15.6388C3.46014 16.1477 4.22221 16.4329 5.10115 16.4864C6.33922 16.5617 7.61409 16.5969 8.99828 16.5935ZM8.96477 13.3945C6.54165 13.3945 4.57007 11.4232 4.57007 8.99998C4.57007 6.5768 6.54165 4.60543 8.96477 4.60543C11.388 4.60543 13.3595 6.5768 13.3595 8.99998C13.3595 11.4232 11.388 13.3945 8.96477 13.3945ZM8.96477 6.01168C7.31704 6.01168 5.97638 7.3523 5.97638 8.99998C5.97638 10.6477 7.31704 11.9883 8.96477 11.9883C10.6126 11.9883 11.9532 10.6477 11.9532 8.99998C11.9532 7.3523 10.6126 6.01168 8.96477 6.01168ZM13.8517 3.19918C13.2692 3.19918 12.797 3.67132 12.797 4.25387C12.797 4.83642 13.2692 5.30856 13.8517 5.30856C14.4343 5.30856 14.9064 4.83642 14.9064 4.25387C14.9064 3.67132 14.4343 3.19918 13.8517 3.19918Z" />
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="header__content row">
+				<div class="col">
+
+					<div class="content__wrapper">
+						<h1 class="content__title">The right way to get a car</h1>
+						<div class="content__text">
+							<p>Monza Motorsports is a boutique-style dealership specializing in premium imports. We offer an advanced
+								online vehicle purchasing experience with integrated financing and contactless home delivery.</p>
+							<p>All of our cars come with a 5 day/500 kilometres no-hassle exchange option. Since 2012 Monza
+								Motorsports
+								has been the benchmark for innovation in the automotive industry.</p>
+						</div>
+
+						<div class="content__btn">
+							<button class="btn btn-outline-primary" type="button">Browse cars</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+<!-- Cards -->
+<section class="cards">
+	<div class="container">
+
+		<h2 class="cards__title title">CURRENT OFFERS</h2>
+
+		<div class="cards__selects row">
+
+			<div class="col-lg-9">
+				<div class="selects__inner">
+
+					<div class="select__dropdown">
+						<button class="dropdown__button">Year</button>
+						<ul class="dropdown__list">
+							<li class="dropdown__list-item" data-value="Item01">Honda</li>
+							<li class="dropdown__list-item" data-value="Item02">Kia</li>
+							<li class="dropdown__list-item" data-value="Item03">Toyota</li>
+							<li class="dropdown__list-item" data-value="Item03">Volkswagen</li>
+							<li class="dropdown__list-item" data-value="Item03">Toyota</li>
+							<li class="dropdown__list-item" data-value="Item03">Volkswagen</li>
+							<li class="dropdown__list-item" data-value="Item03">Honda</li>
+						</ul>
+						<input type="text" name="select-category" class="dropdown__input-hidden">
+					</div>
+
+					<div class="select__dropdown">
+						<button class="dropdown__button">Make</button>
+						<ul class="dropdown__list">
+							<li class="dropdown__list-item" data-value="Item01">Honda</li>
+							<li class="dropdown__list-item" data-value="Item02">Kia</li>
+							<li class="dropdown__list-item" data-value="Item03">Toyota</li>
+							<li class="dropdown__list-item" data-value="Item03">Volkswagen</li>
+							<li class="dropdown__list-item" data-value="Item03">Toyota</li>
+							<li class="dropdown__list-item" data-value="Item03">Volkswagen</li>
+							<li class="dropdown__list-item" data-value="Item03">Honda</li>
+						</ul>
+						<input type="text" name="select-category" class="dropdown__input-hidden">
+					</div>
+
+					<div class="select__dropdown">
+						<button class="dropdown__button">Model</button>
+						<ul class="dropdown__list">
+							<li class="dropdown__list-item" data-value="Item01">Honda</li>
+							<li class="dropdown__list-item" data-value="Item02">Kia</li>
+							<li class="dropdown__list-item" data-value="Item03">Toyota</li>
+							<li class="dropdown__list-item" data-value="Item03">Volkswagen</li>
+							<li class="dropdown__list-item" data-value="Item03">Toyota</li>
+							<li class="dropdown__list-item" data-value="Item03">Volkswagen</li>
+							<li class="dropdown__list-item" data-value="Item03">Honda</li>
+						</ul>
+						<input type="text" name="select-category" class="dropdown__input-hidden">
+					</div>
+
+					<div class="select__dropdown">
+						<button class="dropdown__button">Trim</button>
+						<ul class="dropdown__list">
+							<li class="dropdown__list-item" data-value="Item01">Honda</li>
+							<li class="dropdown__list-item" data-value="Item02">Kia</li>
+							<li class="dropdown__list-item" data-value="Item03">Toyota</li>
+							<li class="dropdown__list-item" data-value="Item03">Volkswagen</li>
+							<li class="dropdown__list-item" data-value="Item03">Toyota</li>
+							<li class="dropdown__list-item" data-value="Item03">Volkswagen</li>
+							<li class="dropdown__list-item" data-value="Item03">Honda</li>
+						</ul>
+						<input type="text" name="select-category" class="dropdown__input-hidden">
+					</div>
+
+					<div class="select__dropdown">
+						<button class="dropdown__button">Mileage</button>
+						<ul class="dropdown__list">
+							<li class="dropdown__list-item" data-value="Item01">Honda</li>
+							<li class="dropdown__list-item" data-value="Item02">Kia</li>
+							<li class="dropdown__list-item" data-value="Item03">Toyota</li>
+							<li class="dropdown__list-item" data-value="Item03">Volkswagen</li>
+							<li class="dropdown__list-item" data-value="Item03">Toyota</li>
+							<li class="dropdown__list-item" data-value="Item03">Volkswagen</li>
+							<li class="dropdown__list-item" data-value="Item03">Honda</li>
+						</ul>
+						<input type="text" name="select-category" class="dropdown__input-hidden">
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-3">
+				<div class="cards__btn">
+					<button class="btn btn-secondary" type="button">40 cars</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="cards__sort row">
+
+			<div class="col-12 col-sm-6">
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+					<label class="form-check-label" for="flexCheckDefault">
+						Default checkbox
+					</label>
+				</div>
+			</div>
+
+			<div class="col-12 col-sm-6">
+				<div class="select__wrapper">
+					<div class="select__text">Sort by</div>
+					<div class="select__dropdown">
+						<button class="dropdown__button">Publication date (ascending)</button>
+						<ul class="dropdown__list">
+							<li class="dropdown__list-item" data-value="Item01">Publication date (descending)</li>
+							<li class="dropdown__list-item" data-value="Item02">Price (ascending)</li>
+							<li class="dropdown__list-item" data-value="Item03">Price (descending)</li>
+							<li class="dropdown__list-item" data-value="Item03">Mileage (ascending)</li>
+							<li class="dropdown__list-item" data-value="Item03">Mileage (descending)</li>
+							<li class="dropdown__list-item" data-value="Item03">Performance (ascending)</li>
+							<li class="dropdown__list-item" data-value="Item03">Performance (descending)</li>
+						</ul>
+						<input type="text" name="select-category" class="dropdown__input-hidden">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="cards__cars row">
+		</div>
 	</div>
+</section>
 
-	<script src="js/app.min.js"></script>
+<!-- Subscribe -->
+<section class="subscribe">
+	<div class="container">
+
+		<div class="row">
+			<div class="subscribe__inner">
+
+				<div class="col-12 col-xl-5">
+					<div class="subscribe__content">
+						<h4 class="content__title">Haven't found a suitable vehicle?</h4>
+						<p class="content__text">Sign up for our newsletter and be the first to know when we publish new vehicle
+							offers.</p>
+					</div>
+				</div>
+
+				<div class="col-12 col-xl-7">
+					<div class="row">
+						<div class="col-sm-6 col-xl-8">
+							<div class="input-group">
+								<input class="form-control" type="text" placeholder="Enter your email" aria-label="Enter your email"
+									aria-describedby="basic-addon2">
+							</div>
+						</div>
+						<div class="col-sm-6 col-xl-4">
+							<div class="subscribe__btn">
+								<button class="btn btn-info" type="button">Subscribe now</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Questions -->
+<section class="questions">
+	<div class="container">
+
+		<h2 class="questions__title title">popular questions</h2>
+
+		<div class="questions__accordion row">
+
+			<div class="col">
+				<div class="accordion" id="accordionExample">
+
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingOne">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+								1. Scope
+							</button>
+						</h2>
+						<div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+							data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								<ul>
+									<li>1.1 The statutory warranty is completely excluded to the extent permitted by law.</li>
+									<li>1.2 If the vehicle still has a current factory warranty, a sales representative (brand
+										representative) of the manufacturer shall provide the services owed therein. If there is a factory
+										warranty, the beginning of the warranty for new vehicles or vehicles with a current manufacturer's
+										warranty is not the date of the first placing on the market, but the beginning of the warranty in
+										the manufacturer's system or the contractually agreed beginning of the warranty, if any.</li>
+									<li>1.3 If there is a special warranty insurance for the vehicle, this will take the place of the
+										material warranty according to section 3.1 and replace it. In this case, the General Terms and
+										Conditions of the respective warranty service provider apply.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingTwo">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								2. Vehicle characteristics
+							</button>
+						</h2>
+						<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+							data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								<ul>
+									<li>2.1 The statutory warranty is completely excluded to the extent permitted by law.</li>
+									<li>2.2 If the vehicle still has a current factory warranty, a sales representative (brand
+										representative) of the manufacturer shall provide the services owed therein. If there is a factory
+										warranty, the beginning of the warranty for new vehicles or vehicles with a current manufacturer's
+										warranty is not the date of the first placing on the market, but the beginning of the warranty in
+										the manufacturer's system or the contractually agreed beginning of the warranty, if any.</li>
+									<li>2.3 If there is a special warranty insurance for the vehicle, this will take the place of the
+										material warranty according to section 3.1 and replace it. In this case, the General Terms and
+										Conditions of the respective warranty service provider apply.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingThree">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+								3. Warranty / guarantee
+							</button>
+						</h2>
+						<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+							data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								<ul>
+									<li>3.1 The statutory warranty is completely excluded to the extent permitted by law.</li>
+									<li>3.2 If the vehicle still has a current factory warranty, a sales representative (brand
+										representative) of the manufacturer shall provide the services owed therein. If there is a factory
+										warranty, the beginning of the warranty for new vehicles or vehicles with a current manufacturer's
+										warranty is not the date of the first placing on the market, but the beginning of the warranty in
+										the manufacturer's system or the contractually agreed beginning of the warranty, if any.</li>
+									<li>3.3 If there is a special warranty insurance for the vehicle, this will take the place of the
+										material warranty according to section 3.1 and replace it. In this case, the General Terms and
+										Conditions of the respective warranty service provider apply.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingFour">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+								4. Trade-in vehicle
+							</button>
+						</h2>
+						<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+							data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								<ul>
+									<li>4.1 The statutory warranty is completely excluded to the extent permitted by law.</li>
+									<li>4.2 If the vehicle still has a current factory warranty, a sales representative (brand
+										representative) of the manufacturer shall provide the services owed therein. If there is a factory
+										warranty, the beginning of the warranty for new vehicles or vehicles with a current manufacturer's
+										warranty is not the date of the first placing on the market, but the beginning of the warranty in
+										the manufacturer's system or the contractually agreed beginning of the warranty, if any.</li>
+									<li>4.3 If there is a special warranty insurance for the vehicle, this will take the place of the
+										material warranty according to section 3.1 and replace it. In this case, the General Terms and
+										Conditions of the respective warranty service provider apply.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingFive">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+								5. Home Delivery
+							</button>
+						</h2>
+						<div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+							data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								<ul>
+									<li>5.1 The statutory warranty is completely excluded to the extent permitted by law.</li>
+									<li>5.2 If the vehicle still has a current factory warranty, a sales representative (brand
+										representative) of the manufacturer shall provide the services owed therein. If there is a factory
+										warranty, the beginning of the warranty for new vehicles or vehicles with a current manufacturer's
+										warranty is not the date of the first placing on the market, but the beginning of the warranty in
+										the manufacturer's system or the contractually agreed beginning of the warranty, if any.</li>
+									<li>5.3 If there is a special warranty insurance for the vehicle, this will take the place of the
+										material warranty according to section 3.1 and replace it. In this case, the General Terms and
+										Conditions of the respective warranty service provider apply.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingSix">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+								6. Right of return
+							</button>
+						</h2>
+						<div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+							data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								<ul>
+									<li>6.1 The statutory warranty is completely excluded to the extent permitted by law.</li>
+									<li>6.2 If the vehicle still has a current factory warranty, a sales representative (brand
+										representative) of the manufacturer shall provide the services owed therein. If there is a factory
+										warranty, the beginning of the warranty for new vehicles or vehicles with a current manufacturer's
+										warranty is not the date of the first placing on the market, but the beginning of the warranty in
+										the manufacturer's system or the contractually agreed beginning of the warranty, if any.</li>
+									<li>6.3 If there is a special warranty insurance for the vehicle, this will take the place of the
+										material warranty according to section 3.1 and replace it. In this case, the General Terms and
+										Conditions of the respective warranty service provider apply.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingSeven">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+								7. Written form
+							</button>
+						</h2>
+						<div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+							data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								<ul>
+									<li>7.1 The statutory warranty is completely excluded to the extent permitted by law.</li>
+									<li>7.2 If the vehicle still has a current factory warranty, a sales representative (brand
+										representative) of the manufacturer shall provide the services owed therein. If there is a factory
+										warranty, the beginning of the warranty for new vehicles or vehicles with a current manufacturer's
+										warranty is not the date of the first placing on the market, but the beginning of the warranty in
+										the manufacturer's system or the contractually agreed beginning of the warranty, if any.</li>
+									<li>7.3 If there is a special warranty insurance for the vehicle, this will take the place of the
+										material warranty according to section 3.1 and replace it. In this case, the General Terms and
+										Conditions of the respective warranty service provider apply.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingEight">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+								8. Applicable law and place of jurisdiction
+							</button>
+						</h2>
+						<div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+							data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								<ul>
+									<li>8.1 The statutory warranty is completely excluded to the extent permitted by law.</li>
+									<li>8.2 If the vehicle still has a current factory warranty, a sales representative (brand
+										representative) of the manufacturer shall provide the services owed therein. If there is a factory
+										warranty, the beginning of the warranty for new vehicles or vehicles with a current manufacturer's
+										warranty is not the date of the first placing on the market, but the beginning of the warranty in
+										the manufacturer's system or the contractually agreed beginning of the warranty, if any.</li>
+									<li>8.3 If there is a special warranty insurance for the vehicle, this will take the place of the
+										material warranty according to section 3.1 and replace it. In this case, the General Terms and
+										Conditions of the respective warranty service provider apply.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer class="footer">
+	<div class="container">
+		<div class="footer__inner row">
+
+			<div class="col-12 col-sm-3">
+				<a class="footer__logo" href="#">
+					<img src="images/dist/logo-footer.svg" alt="Logo">
+				</a>
+			</div>
+
+			<div class="col-12 col-sm-9">
+				<div class="row">
+
+					<div class="col-12 col-sm-9">
+						<ul class="footer__list">
+							<li class="footer__item">
+								<a class="footer__link" href="#">Inventory</a>
+							</li>
+							<li class="footer__item">
+								<a class="footer__link" href="#">Financing </a>
+							</li>
+							<li class="footer__item">
+								<a class="footer__link" href="#">Contacts</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="col-12 col-sm-3">
+						<ul class="social__list">
+							<li class="social__list-item">
+								<a class="social__list-link" href="#">
+									<svg width="9" height="18" viewBox="0 0 9 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M7.3575 2.98875H9.00075V0.12675C8.71725 0.08775 7.74225 0 6.60675 0C4.2375 0 2.6145 1.49025 2.6145 4.22925V6.75H0V9.9495H2.6145V18H5.82V9.95025H8.32875L8.727 6.75075H5.81925V4.5465C5.82 3.62175 6.069 2.98875 7.3575 2.98875Z" />
+									</svg>
+								</a>
+							</li>
+							<li class="social__list-item">
+								<a class="social__list-link" href="#">
+									<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M9.1775 18C9.1179 18 9.0583 18 8.99828 17.9997C7.58731 18.0032 6.2836 17.9673 5.01572 17.8901C3.85333 17.8194 2.79228 17.4177 1.94713 16.7286C1.13163 16.0637 0.574744 15.1646 0.291973 14.0566C0.0458697 13.092 0.0328229 12.1451 0.0203255 11.2292C0.0112614 10.5721 0.00192268 9.79346 0 9.00162C0.00192268 8.20648 0.0112614 7.42783 0.0203255 6.77071C0.0328229 5.85499 0.0458697 4.90811 0.291973 3.94337C0.574744 2.83539 1.13163 1.9363 1.94713 1.27135C2.79228 0.582226 3.85333 0.180538 5.01586 0.109813C6.28373 0.0327713 7.58772 -0.00320908 9.00172 0.000224161C10.4131 -0.00279709 11.7164 0.0327713 12.9843 0.109813C14.1467 0.180538 15.2077 0.582226 16.0529 1.27135C16.8685 1.9363 17.4253 2.83539 17.708 3.94337C17.9541 4.90797 17.9672 5.85499 17.9797 6.77071C17.9887 7.42783 17.9982 8.20648 18 8.99833V9.00162C17.9982 9.79346 17.9887 10.5721 17.9797 11.2292C17.9672 12.145 17.9543 13.0918 17.708 14.0566C17.4253 15.1646 16.8685 16.0637 16.0529 16.7286C15.2077 17.4177 14.1467 17.8194 12.9843 17.8901C11.7701 17.964 10.5228 18 9.1775 18ZM8.99828 16.5935C10.3863 16.5968 11.6608 16.5617 12.8989 16.4865C13.7778 16.4331 14.5399 16.1478 15.1642 15.6388C15.7413 15.1681 16.1387 14.5188 16.3454 13.7089C16.5503 12.9059 16.5621 12.0437 16.5735 11.21C16.5824 10.5573 16.5918 9.78413 16.5937 8.99998C16.5918 8.21569 16.5824 7.44266 16.5735 6.78993C16.5621 5.9562 16.5503 5.09405 16.3454 4.29095C16.1387 3.48098 15.7413 2.83168 15.1642 2.36106C14.5399 1.85211 13.7778 1.56688 12.8989 1.51346C11.6608 1.43806 10.3863 1.40332 9.00158 1.40634C7.61382 1.40304 6.33922 1.43806 5.10115 1.51346C4.22221 1.56688 3.46014 1.85211 2.83582 2.36106C2.25874 2.83168 1.86129 3.48098 1.6546 4.29095C1.4497 5.09405 1.43789 5.95607 1.42649 6.78993C1.41756 7.44321 1.40823 8.21678 1.4063 9.00162C1.40823 9.78303 1.41756 10.5567 1.42649 11.21C1.43789 12.0437 1.4497 12.9059 1.6546 13.7089C1.86129 14.5188 2.25874 15.1681 2.83582 15.6388C3.46014 16.1477 4.22221 16.4329 5.10115 16.4864C6.33922 16.5617 7.61409 16.5969 8.99828 16.5935ZM8.96477 13.3945C6.54165 13.3945 4.57007 11.4232 4.57007 8.99998C4.57007 6.5768 6.54165 4.60543 8.96477 4.60543C11.388 4.60543 13.3595 6.5768 13.3595 8.99998C13.3595 11.4232 11.388 13.3945 8.96477 13.3945ZM8.96477 6.01168C7.31704 6.01168 5.97638 7.3523 5.97638 8.99998C5.97638 10.6477 7.31704 11.9883 8.96477 11.9883C10.6126 11.9883 11.9532 10.6477 11.9532 8.99998C11.9532 7.3523 10.6126 6.01168 8.96477 6.01168ZM13.8517 3.19918C13.2692 3.19918 12.797 3.67132 12.797 4.25387C12.797 4.83642 13.2692 5.30856 13.8517 5.30856C14.4343 5.30856 14.9064 4.83642 14.9064 4.25387C14.9064 3.67132 14.4343 3.19918 13.8517 3.19918Z" />
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+</footer>
+
+<script src="js/app.min.js"></script>
 
 </body>
+
 </html>

@@ -4,14 +4,16 @@ import bootstrap from 'bootstrap';
 
 
 document.addEventListener('DOMContentLoaded', () => {
-	
+
+	// Hamburger
+
 	document.querySelector('.hamburger').addEventListener('click', function () {
 		document.querySelector('.hamburger--slider').classList.toggle('is-active');
 		document.querySelector('.top__inner').classList.toggle('top__inner--active');
 		document.querySelector('body').classList.toggle('hidden__body');
 	});
 
-		//Select
+	//Select
 
 	// Полифилл для метода forEach для NodeList
 	if (window.NodeList && !NodeList.prototype.forEach) {
@@ -47,7 +49,6 @@ document.addEventListener('DOMContentLoaded', () => {
 				dropDownInput.value = this.dataset.value;
 				dropDownList.classList.remove('dropdown__list--visible');
 				dropDownBtn.classList.remove('dropdown__button--active');
-				
 			})
 		})
 
@@ -69,6 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
 
 	// Cards
+
 	const cars = [
 		{
 			year: '2019',
@@ -80,7 +82,6 @@ document.addEventListener('DOMContentLoaded', () => {
 			img: '../images/dist/volkswagen-car.png',
 			new: false,
 			sold: false,
-		
 		},
 
 		{
@@ -93,7 +94,6 @@ document.addEventListener('DOMContentLoaded', () => {
 			img: '../images/dist/toyota-car.png',
 			new: true,
 			sold: false,
-		
 		},
 
 		{

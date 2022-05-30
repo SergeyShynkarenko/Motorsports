@@ -156,20 +156,26 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 12px;
-    line-height: 1.36;
     margin-bottom: 23px;
+    font: 400 12px/1.5 $userfont;
 
     .select__wrapper {
+      font: 400 12px/1.36 $userfont;
       display: flex;
-      font-size: 12px;
       align-items: center;
       justify-content: flex-end;
+
+      @media (max-width: 576px) {
+        justify-content: flex-start;
+      }
     }
 
     .select__text {
       color: $black;
       margin-right: 17px;
+      @media (max-width: 576px) {
+        margin-top: 20px;
+      }
     }
 
     .select__dropdown {
@@ -212,8 +218,7 @@
           width: 192px;
           border: none;
           padding: 12px 12px 0 12px;
-          font-size: 12px;
-          line-height: 1.36;
+          font: 400 12px/1.36 $userfont;
           position: absolute;
           left: 8px;
           top: 24px;
@@ -354,10 +359,6 @@
           font: 500 20px/1.36 $userfont;
           color: $black;
           margin: 0;
-        }
-
-        &__disabled {
-          opacity: 0.5;
         }
       }
     }
