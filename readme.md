@@ -1,3 +1,4 @@
+<h1>How to use</h1>
 <ol>
 	<li>app - source code;</li>
 	<li>dist - build versin;</li>
